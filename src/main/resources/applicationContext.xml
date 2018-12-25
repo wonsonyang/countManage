@@ -135,7 +135,27 @@
             </list>
         </property>
     </bean>
+    <!-- 将SessionFactory配置到spring容器中(Spring整合Hibernate) -->
+    <bean name="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean" >
+        <property name="dataSource" ref="dataSource" ></property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect" >org.hibernate.dialect.MySQLDialect</prop>
+                <prop key="hibernate.show_sql" >true</prop>
+                <prop key="hibernate.format_sql" >true</prop>
+                <prop key="hibernate.hbm2ddl.auto" >update</prop>
+            </props>
+        </property>
+        <!-- 引入orm数据方式一。 -->
+        <property name="mappingDirectoryLocations" value="classpath:cn/xxx/domain" ></property>
 
+        <!-- 引入orm数据方式二。注入hibernate的映射文件(Maven项目,必须使用此方式) -->
+        <property name="mappingLocations">
+            <list>
+                <value>classpath:com/xxx/bos/domain/*.xml</value>
+            </list>
+        </property>
+    </bean>
 
 
     <!--JdbcTemplate使用动态数据源的配置-->
