@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.efun.po.TCompanyInfo" table="t_company_info">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="companyName" type="java.lang.String">
+            <column name="companyName" length="64">
+                <comment>公司名称</comment>
+            </column>
+        </property>
+        <property name="companyType" type="java.lang.Integer">
+            <column name="companyType">
+                <comment>类型 （1=媒体;2=原厂;3=合作商）</comment>
+            </column>
+        </property>
+        <property name="createdTime" type="java.sql.Timestamp">
+            <column name="createdTime">
+                <comment>创建时间</comment>
+            </column>
+        </property>
+        <property name="isDeleted" type="java.lang.Integer">
+            <column name="isDeleted">
+                <comment>0 = 未删除;1 = 已删除</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

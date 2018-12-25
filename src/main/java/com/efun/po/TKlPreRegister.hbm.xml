@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.efun.po.TKlPreRegister" table="t_pre_register" dynamic-insert="true" dynamic-update="true">
+		<meta attribute="sync-DAO">false</meta>
+		<id name="id" column="id" type="java.lang.Long">
+			<generator class="identity" />
+		</id>
+		<property name="gameCode" column="gameCode" type="java.lang.String" not-null="true"/>
+		<!--<property name="thirdPlate" column="thirdPlate" type="java.lang.String" not-null="true"/>-->
+		<property name="playerId" column="playerId" type="java.lang.String" not-null="true"/>
+		<property name="preRegisterDate" column="preRegisterDate" type="java.lang.String" not-null="true"/>
+		<property name="registeredOS" column="registeredOS" type="java.lang.String" not-null="false"/>
+		<property name="deleted" column="deleted" type="java.lang.Integer" not-null="true"/>
+	</class>
+</hibernate-mapping>

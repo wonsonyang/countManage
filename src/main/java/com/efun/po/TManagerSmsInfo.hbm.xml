@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.efun.po.TManagerSmsInfo" table="t_manager_sms_info" dynamic-insert="true" dynamic-update="true">
+		<meta attribute="sync-DAO">false</meta>
+		<id name="id" column="id" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="title" column="title" type="java.lang.String" not-null="true"/>
+		<property name="content" column="content" type="java.lang.String" not-null="true"/>
+		<property name="thirdType" column="thirdType" type="java.lang.String" not-null="true"/>
+		<property name="phoneNum" column="phoneNum" type="java.lang.String" not-null="true"/>
+		<property name="sendTime" column="sendTime" type="java.util.Date" not-null="false"/>
+		<property name="sendState" column="sendState" type="java.lang.Integer" not-null="false"/>
+		<property name="successNum" column="successNum" type="java.lang.Integer" not-null="false"/>
+		<property name="totalNum" column="totalNum" type="java.lang.Integer" not-null="false"/>
+		<property name="istort" column="istort" type="java.lang.Integer" not-null="false"/>
+		<property name="filePath" column="filePath" type="java.lang.String" not-null="true"/>
+		<property name="createTime" column="createTime" type="java.util.Date" not-null="false"/>
+		<property name="gameCode" column="gameCode" type="java.lang.String" not-null="false"/>
+		<property name="activityCode" column="activityCode" type="java.lang.String" not-null="false"/>
+		<property name="area" column="area" type="java.lang.String" not-null="false"/>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.efun.po.TGameplayerProblem" table="t_gameplayer_problem" dynamic-insert="true" dynamic-update="true">
+		<meta attribute="sync-DAO">false</meta>
+		<id name="tgppid" column="tgppid" type="java.lang.Integer">
+			<generator class="identity" />
+		</id>
+		<property name="gameCode" column="gameCode" type="java.lang.String" not-null="false"/>
+		<property name="serverCode" column="serverCode" type="java.lang.String" not-null="false"/>
+		<property name="roleid" column="roleid" type="java.lang.String" not-null="false"/>
+		<property name="palayName" column="palayName" type="java.lang.String" not-null="false"/>
+		<property name="uid" column="uid" type="java.lang.String" not-null="false"/>
+		<property name="createTime" column="createTime" type="java.util.Date" not-null="true"/>
+		<property name="questionsTitle" column="questionsTitle" type="java.lang.String" not-null="false"/>
+		<property name="theQuestions" column="theQuestions" type="java.lang.String" not-null="false"/>
+		<property name="questionType" column="questionType" type="java.lang.Integer" not-null="false"/>
+		<property name="replyState" column="replyState" type="java.lang.Integer" not-null="false"/>
+		<property name="tcspid" column="tcspid" type="java.lang.Integer" not-null="false"/>
+		<property name="plateform" column="plateform" type="java.lang.String" not-null="false"/>
+		<property name="item1" column="item1" type="java.lang.String" not-null="false"/>
+		<property name="item2" column="item2" type="java.lang.String" not-null="false"/>
+		<property name="item3" column="item3" type="java.lang.String" not-null="false"/>
+		<property name="item4" column="item4" type="java.lang.String" not-null="false"/>
+		<property name="item5" column="item5" type="java.lang.String" not-null="false"/>
+		<property name="img" column="img" type="java.lang.String" not-null="false"/>
+		<property name="item6" column="item6" type="java.lang.String" not-null="false"/>
+		<property name="item7" column="item7" type="java.util.Date" not-null="true"/>
+		<property name="item8" column="item8" type="java.lang.String" not-null="false"/>
+		<property name="item9" column="item9" type="java.lang.String" not-null="false"/>
+		<property name="item10" column="item10" type="java.lang.String" not-null="false"/>
+		<property name="dynamicTime" column="dynamicTime" type="java.util.Date" not-null="false"/>
+		<property name="language_" column="language_" type="java.lang.String" not-null="false"/>
+		<property name="remark" column="remark" type="java.lang.String" not-null="false"/>
+		<property name="item11" column="item11" type="java.lang.String" not-null="false"/>
+		<property name="item12" column="item12" type="java.lang.String" not-null="false"/>
+		<property name="item13" column="item13" type="java.lang.String" not-null="false"/>
+		<property name="item14" column="item14" type="java.lang.String" not-null="false"/>
+		<property name="item15" column="item15" type="java.lang.String" not-null="false"/>
+		<property name="qq" column="qq" type="java.lang.String" not-null="false"/>
+		<property name="wechat" column="wechat" type="java.lang.String" not-null="false"/>
+		<property name="interval" column="interval" type="java.lang.Integer" not-null="false"/>
+		<property name="payType" column="payType" type="java.lang.String" not-null="false"/>
+		<property name="payTime" column="payTime" type="java.util.Date" not-null="false"/>
+		<property name="payAmount" column="payAmount" type="java.lang.Double" not-null="false"/>
+		<property name="payId" column="payId" type="java.lang.String" not-null="false"/>
+		<property name="csRemark" column="csRemark" type="java.lang.String" not-null="false"/>
+		<property name="pfRemark" column="pfRemark" type="java.lang.String" not-null="false"/>
+		<property name="payStatus" column="payStatus" type="java.lang.String" not-null="false"/>
+	</class>
+</hibernate-mapping>

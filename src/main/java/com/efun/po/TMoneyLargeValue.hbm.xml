@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.efun.po.TMoneyLargeValue" table="t_money_large_value" dynamic-insert="true" dynamic-update="true">
+		<meta attribute="sync-DAO">false</meta>
+		<id name="tlvid" column="tlvid" type="java.lang.Long">
+			<generator class="identity" />
+		</id>
+		<property name="u_id" column="u_id" type="java.lang.Long" not-null="false"/>
+		<property name="roleid" column="roleid" type="java.lang.String" not-null="false"/>
+		<property name="roleName" column="roleName" type="java.lang.String" not-null="false"/>
+		<property name="gameCode" column="gameCode" type="java.lang.String" not-null="false"/>
+		<property name="serverName" column="serverName" type="java.lang.String" not-null="false"/>
+		<property name="serverCode" column="serverCode" type="java.lang.String" not-null="false"/>
+		<property name="email" column="email" type="java.lang.String" not-null="false"/>
+		<property name="phone" column="phone" type="java.lang.String" not-null="false"/>
+		<property name="palayName" column="palayName" type="java.lang.String" not-null="false"/>
+		<property name="remittanceNum" column="remittanceNum" type="java.lang.Float" not-null="false"/>
+		<property name="remittanceTime" column="remittanceTime" type="java.util.Date" not-null="false"/>
+		<property name="imgVoucher" column="imgVoucher" type="java.lang.String" not-null="false"/>
+		<property name="currency" column="currency" type="java.lang.String" not-null="false"/>
+		<property name="twd" column="twd" type="java.lang.Double" not-null="false"/>
+		<property name="firstValue" column="firstValue" type="java.lang.Integer" not-null="false"/>
+		<property name="playerStone" column="playerStone" type="java.lang.Float" not-null="false"/>
+		<property name="systemStone" column="systemStone" type="java.lang.Float" not-null="false"/>
+		<property name="operateStone" column="operateStone" type="java.lang.Float" not-null="false"/>
+		<property name="remitOrderId" column="remitOrderId" type="java.lang.String" not-null="false"/>
+		<property name="efunOrderId" column="efunOrderId" type="java.lang.String" not-null="false"/>
+		<property name="cusServiceState" column="cusServiceState" type="java.lang.Integer" not-null="false"/>
+		<property name="operateState" column="operateState" type="java.lang.Integer" not-null="false"/>
+		<property name="financeState" column="financeState" type="java.lang.Integer" not-null="false"/>
+		<property name="replacementState" column="replacementState" type="java.lang.Integer" not-null="false"/>
+		<property name="createdTime" column="createdTime" type="java.util.Date" not-null="false"/>
+		<property name="modifiedTime" column="modifiedTime" type="java.util.Date" not-null="false"/>
+		<property name="item1" column="item1" type="java.lang.String" not-null="false"/>
+		<property name="item2" column="item2" type="java.lang.String" not-null="false"/>
+		<property name="item3" column="item3" type="java.lang.String" not-null="false"/>
+		<property name="item4" column="item4" type="java.lang.String" not-null="false"/>
+		<property name="item5" column="item5" type="java.lang.String" not-null="false"/>
+		<property name="item6" column="item6" type="java.lang.String" not-null="false"/>
+		<property name="item7" column="item7" type="java.lang.String" not-null="false"/>
+		<property name="lastFiveNum" column="lastFiveNum" type="java.lang.String" not-null="false"/>
+		<property name="receiptNeed" column="receiptNeed" type="java.lang.String" not-null="false"/>
+		<property name="receiptAddr" column="receiptAddr" type="java.lang.String" not-null="false"/>
+		<property name="backup" column="backup" type="java.lang.String" not-null="false"/>
+		<property name="gameName" column="gameName" type="java.lang.String" not-null="false"/>
+		<property name="remitOrderIdType" column="remitOrderIdType" type="java.lang.Integer" not-null="false"/>
+		<property name="beneficiaryAccount" column="beneficiaryAccount" type="java.lang.String" not-null="false"/>
+		<property name="remittanceType" column="remittanceType" type="java.lang.Integer" not-null="false"/>
+		<property name="awardProject" column="awardProject" type="java.lang.String"/>
+		<property name="awardContent" column="awardContent" type="java.lang.String"/>
+		<property name="sendStoneTime" column="sendStoneTime" type="java.util.Date"/>
+		<property name="isSendAward" column="isSendAward" type="java.lang.Integer"/>
+		<property name="autoSendAward" column="autoSendAward" type="java.lang.Integer"/>
+		<property name="bonusStone" column="bonusStone" type="java.lang.Integer"/>
+		<property name="operator" column="operator" type="java.lang.String"/>
+	</class>
+</hibernate-mapping>

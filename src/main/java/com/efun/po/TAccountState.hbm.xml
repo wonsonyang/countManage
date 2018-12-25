@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.efun.po.TAccountState" table="t_account_state" dynamic-insert="true" dynamic-update="true">
+		<meta attribute="sync-DAO">false</meta>
+		<id name="keyId" column="keyId" type="java.lang.Long">
+			<generator class="identity" />
+		</id>
+		<property name="gameCode" column="gameCode" type="java.lang.String" not-null="true"/>
+		<property name="accountId" column="accountId" type="java.lang.String" not-null="true"/>
+		<property name="accountName" column="accountName" type="java.lang.String" not-null="true"/>
+		<property name="accountType" column="accountType" type="java.lang.String" not-null="true"/>
+		<property name="accountState" column="accountState" type="java.lang.String" not-null="true"/>
+		<property name="recordState" column="recordState" type="java.lang.String" not-null="true"/>
+		<property name="recordPublic" column="recordPublic" type="java.lang.String" not-null="true"/>
+		<property name="handleCause" column="handleCause" type="java.lang.String" not-null="false"/>
+		<property name="handleWay" column="handleWay" type="java.lang.String" not-null="false"/>
+		<property name="hanldeRemark" column="hanldeRemark" type="java.lang.String" not-null="false"/>
+		<property name="createdTime" column="createdTime" type="java.util.Date" not-null="true"/>
+		<property name="modifiedTime" column="modifiedTime" type="java.util.Date" not-null="true"/>
+		<property name="expiredTime" column="expiredTime" type="java.util.Date" not-null="false"/>
+		<property name="hanldeAuthor" column="hanldeAuthor" type="java.lang.String" not-null="false"/>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.efun.po.TGoogleRefundRetrieve" table="t_google_refund_retrieve">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="userId" type="java.lang.Long">
+            <column name="userId">
+                <comment>用户UID</comment>
+            </column>
+        </property>
+        <property name="roleId" type="java.lang.String">
+            <column name="roleId">
+                <comment>角色ID</comment>
+            </column>
+        </property>
+        <property name="gameCode" type="java.lang.String">
+            <column name="gameCode">
+                <comment>游戏代码</comment>
+            </column>
+        </property>
+        <property name="serverCode" type="java.lang.String">
+            <column name="serverCode">
+                <comment>服务器代码</comment>
+            </column>
+        </property>
+        <property name="efunOrderId" type="java.lang.String">
+            <column name="efunOrderId">
+                <comment>efun订单号</comment>
+            </column>
+        </property>
+        <property name="googleOrderId" type="java.lang.String">
+            <column name="googleOrderId">
+                <comment>第三方订单号</comment>
+            </column>
+        </property>
+        <property name="currency" type="java.lang.String">
+            <column name="currency">
+                <comment>币种</comment>
+            </column>
+        </property>
+        <property name="stone" type="java.lang.Double">
+            <column name="stone">
+                <comment>钻石数</comment>
+            </column>
+        </property>
+        <property name="gamePay" type="java.lang.Double">
+            <column name="gamePay">
+                <comment>金额</comment>
+            </column>
+        </property>
+        <property name="twCoin" type="java.lang.Double">
+            <column name="twCoin">
+                <comment>台币金额</comment>
+            </column>
+        </property>
+        <property name="usd" type="java.lang.Double">
+            <column name="usd">
+                <comment>美金金额</comment>
+            </column>
+        </property>
+        <property name="createdTime" type="java.lang.String">
+            <column name="createdTime">
+                <comment>订单创建时间</comment>
+            </column>
+        </property>
+        <property name="modifiedTime" type="java.lang.String">
+            <column name="modifiedTime">
+                <comment>订单修改时间</comment>
+            </column>
+        </property>
+        <property name="voidedTime" type="java.lang.String">
+            <column name="voidedTime">
+                <comment>退款时间</comment>
+            </column>
+        </property>
+        <property name="productId" type="java.lang.String">
+            <column name="productId">
+                <comment>商品ID</comment>
+            </column>
+        </property>
+        <property name="status" type="java.lang.Integer">
+            <column name="status">
+                <comment>回收状态:0:未回收,1:已冲回</comment>
+            </column>
+        </property>
+        <property name="recoveryPeriod" type="java.lang.String">
+            <column name="recoveryPeriod">
+                <comment>回收期限</comment>
+            </column>
+        </property>
+        <property name="deleted" type="java.lang.Integer">
+            <column name="deleted" >
+                <comment>逻辑删除 0或空 未删除 1 已删除</comment>
+            </column>
+        </property>
+        <property name="banTime" type="java.lang.String">
+            <column name="banTime">
+                <comment>封号时间</comment>
+            </column>
+        </property>
+        <property name="remark" type="java.lang.String">
+            <column name="remark">
+                <comment>备注</comment>
+            </column>
+        </property>
+        <property name="operator" type="java.lang.String">
+            <column name="operator">
+                <comment>操作人</comment>
+            </column>
+        </property>
+        <property name="operatedTime" type="java.lang.String">
+            <column name="operatedTime">
+                <comment>操作时间</comment>
+            </column>
+        </property>
+        <property name="recoveryTime" type="java.lang.String">
+            <column name="recoveryTime">
+                <comment>回收款项的具体时间</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.efun.po.TActivityModelInfo" table="t_activity_model_info" >
+        <id name="id" type="java.lang.String">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="gameCode" type="java.lang.String">
+            <column name="gameCode">
+                <comment>游戏代码</comment>
+            </column>
+        </property>
+        <property name="activityCode" type="java.lang.String">
+            <column name="activityCode">
+                <comment>活动代码</comment>
+            </column>
+        </property>
+        <property name="pid" type="java.lang.String">
+            <column name="pid">
+                <comment>子id，与父id对应</comment>
+            </column>
+        </property>
+        <property name="name" type="java.lang.String">
+            <column name="name">
+                <comment>名称</comment>
+            </column>
+        </property>
+        <property name="picture" type="java.lang.String">
+            <column name="picture">
+                <comment>图片地址</comment>
+            </column>
+        </property>
+        <property name="htmlPathUrl" type="java.lang.String">
+            <column name="htmlPathUrl">
+                <comment>链接地址</comment>
+            </column>
+        </property>
+        <property name="deleted" type="java.lang.String">
+            <column name="deleted">
+                <comment>是否删除，0存在1删除</comment>
+            </column>
+        </property>
+        <property name="rewardCode" type="java.lang.String">
+            <column name="rewardCode">
+                <comment>奖励代码</comment>
+            </column>
+        </property>
+        <property name="rewardCondition" type="java.lang.String">
+            <column name="rewardCondition">
+                <comment>奖励条件</comment>
+            </column>
+        </property>
+        <property name="rewardId" type="java.lang.String">
+            <column name="rewardId">
+                <comment>奖励id</comment>
+            </column>
+        </property>
+        <property name="rewardTitle" type="java.lang.String">
+            <column name="rewardTitle">
+                <comment>奖励标题</comment>
+            </column>
+        </property>
+        <property name="rewardContent" type="java.lang.String">
+            <column name="rewardContent">
+                <comment>奖励内容</comment>
+            </column>
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="description">
+                <comment>详细描述</comment>
+            </column>
+        </property>
+        <property name="type" type="java.lang.String">
+            <column name="type">
+                <comment>配置类型</comment>
+            </column>
+        </property>
+        <property name="createdTime" type="java.util.Date">
+            <column name="createdTime">
+                <comment>创建时间</comment>
+            </column>
+        </property>
+        <property name="modifiedTime" type="java.util.Date">
+            <column name="modifiedTime">
+                <comment>修改时间</comment>
+            </column>
+        </property>
+        <property name="remark" type="java.lang.String">
+            <column name="remark">
+                <comment>备注（备用）</comment>
+            </column>
+        </property>
+        <property name="pictureBak" type="java.lang.String">
+            <column name="pictureBak">
+                <comment>图片地址（备用）</comment>
+            </column>
+        </property>
+        <property name="orderno" type="java.lang.String">
+            <column name="orderno">
+                <comment>排序值</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

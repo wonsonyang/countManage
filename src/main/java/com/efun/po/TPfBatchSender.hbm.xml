@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.efun.po.TPfBatchSender" table="t_pf_batch_sender" dynamic-insert="true" dynamic-update="true">
+		<meta attribute="sync-DAO">false</meta>
+		<id name="id" column="id" type="java.lang.Long">
+			<generator class="identity" />
+		</id>
+		<property name="batchCode" column="batchCode" type="java.lang.String"/>
+		<property name="uid" column="uid" type="java.lang.String"/>
+		<property name="isSuccess" column="isSuccess" type="java.lang.String"/>
+		<property name="reissueType" column="reissueType" type="java.lang.String"/>
+		<property name="reissueItem" column="reissueItem" type="java.lang.String"/>
+		<property name="remark" column="remark" type="java.lang.String"/>
+		<property name="deleted" column="deleted" type="java.lang.String"/>
+		<property name="createdTime" column="createdTime" type="java.util.Date"/>
+		<property name="modifyTime" column="modifyTime" type="java.util.Date"/>
+		<property name="platform" column="platform" type="java.lang.String"/>
+	</class>
+</hibernate-mapping>

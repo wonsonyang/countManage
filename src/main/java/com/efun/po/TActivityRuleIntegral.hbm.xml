@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.efun.po.TActivityRuleIntegral" table="t_activity_rule_integral" dynamic-insert="true" dynamic-update="true">
+		<meta attribute="sync-DAO">false</meta>
+		<id name="id" column="id" type="java.lang.Long">
+			<generator class="identity" />
+		</id>
+		<property name="config" column="config" type="java.lang.String" not-null="false"/>
+		<property name="modifiedTime" column="modifiedTime" type="java.util.Date" not-null="false"/>
+		<property name="createdTime" column="createdTime" type="java.util.Date" not-null="false"/>
+		<property name="activityCode" column="activityCode" type="java.lang.String" not-null="false"/>
+		<property name="deleted" column="deleted" type="java.lang.String" not-null="false"/>
+		<property name="createBy" column="createBy" type="java.lang.String" not-null="false"/>
+		<property name="modifyBy" column="modifyBy" type="java.lang.String" not-null="false"/>
+		<property name="gameCode" column="gameCode" type="java.lang.String" not-null="false"/>
+	</class>
+</hibernate-mapping>

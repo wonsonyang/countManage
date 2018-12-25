@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.efun.po.TPfCartoon" table="t_pf_cartoon" dynamic-insert="true" dynamic-update="true">
+		<meta attribute="sync-DAO">false</meta>
+		<id name="id" column="id" type="java.lang.Long">
+			<generator class="identity" />
+		</id>
+		<property name="gameCode" column="gameCode" type="java.lang.String" not-null="true"/>
+		<property name="name" column="name" type="java.lang.String" not-null="true"/>
+		<property name="description" column="description" type="java.lang.String" not-null="true"/>
+		<property name="cover" column="cover" type="java.lang.String" not-null="true"/>
+		<property name="cartoon" column="cartoon" type="java.lang.String" not-null="true"/>
+		<property name="bigPicUrl" column="bigPicUrl" type="java.lang.String" not-null="true"></property>
+		<property name="url" column="url" type="java.lang.String" not-null="true"/>
+		<property name="orderno" column="orderno" type="java.lang.Integer" not-null="true"/>
+		<property name="createdTime" column="createdTime" type="java.util.Date" not-null="true"/>
+		<property name="modifiedTime" column="modifiedTime" type="java.util.Date" not-null="true"/>
+		<property name="deleted" column="deleted" type="java.lang.Integer" not-null="true"/>
+	</class>
+</hibernate-mapping>

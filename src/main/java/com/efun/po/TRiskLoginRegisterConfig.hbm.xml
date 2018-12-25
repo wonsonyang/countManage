@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2018-7-10 11:35:25 by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.efun.po.TRiskLoginRegisterConfig" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="t_risk_login_register_config">
+        <id name="id" type="java.lang.Long">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="gameCode" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="gameCode" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="gameName" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="gameName">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="areaCode" optimistic-lock="true" type="string" unique="false">
+            <column length="15" name="areaCode" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="actionType" optimistic-lock="true" type="int" unique="false">
+            <column name="actionType" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="eventType" optimistic-lock="true" type="int" unique="false">
+            <column name="eventType" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="registerCount" optimistic-lock="true" type="int" unique="false">
+            <column name="registerCount" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="ipWhiteList" optimistic-lock="true" type="string" unique="false">
+            <column length="65535" name="ipWhiteList">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="createdTime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="createdTime" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="modifiedTime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="modifiedTime" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="createdUser" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="createdUser" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="modifiedUser" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="modifiedUser" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="deleted" optimistic-lock="true" type="string" unique="false">
+            <column name="deleted" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="comment" optimistic-lock="true" type="string" unique="false">
+            <column length="200" name="comment">
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

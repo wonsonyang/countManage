@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.efun.po.TPfMedia" table="t_pf_media" dynamic-insert="true" dynamic-update="true">
+		<meta attribute="sync-DAO">false</meta>
+		<id name="id" column="id" type="java.lang.Long">
+			<generator class="identity" />
+		</id>
+		<property name="createdTime" column="createdTime" type="java.util.Date" not-null="true"/>
+		<property name="lastModifiedTime" column="lastModifiedTime" type="java.util.Date" not-null="true"/>
+		<property name="gameCode" column="gameCode" type="java.lang.String" not-null="true"/>
+		<property name="module" column="module" type="java.lang.String" not-null="true"/>
+		<property name="type" column="type" type="java.lang.String" not-null="true"/>
+		<property name="title" column="title" type="java.lang.String" not-null="false"/>
+		<property name="content" column="content" type="java.lang.String" not-null="false"/>
+		<property name="pic" column="pic" type="java.lang.String" not-null="false"/>
+		<property name="url" column="url" type="java.lang.String" not-null="false"/>
+		<property name="beginTime" column="beginTime" type="java.util.Date" not-null="false"/>
+		<property name="endTime" column="endTime" type="java.util.Date" not-null="false"/>
+		<property name="deleted" column="deleted" type="java.lang.Integer" not-null="false"/>
+		<property name="showScope" column="showScope" type="java.lang.Integer" not-null="true"/>
+		<property name="weight" column="weight" type="java.lang.Integer" not-null="true"/>
+		<property name="likes" column="likes" type="java.lang.Integer" not-null="true"/>
+		<property name="views" column="views" type="java.lang.Integer" not-null="true"/>
+		<property name="audit" column="audit" type="java.lang.Integer" not-null="true"/>
+		<property name="role" column="role" type="java.lang.String" not-null="false"/>
+		<property name="uid" column="uid" type="java.lang.String" not-null="false"/>
+		<property name="roleId" column="roleId" type="java.lang.String" not-null="false"/>
+		<property name="roleName" column="roleName" type="java.lang.String" not-null="false"/>
+		<property name="anchorName" column="anchorName" type="java.lang.String" not-null="false"/>
+		<property name="source" column="source" type="java.lang.String" not-null="false"/>
+		<property name="bigPic" column="bigPic" type="java.lang.String" not-null="false"/>
+		<property name="language" column="language" type="java.lang.String" not-null="false"/>
+		<property name="duration" column="duration" type="java.lang.String" not-null="false"/>
+		<property name="platform" column="platform" type="java.lang.String" not-null="false"/>
+		<property name="hot" column="hot" type="java.lang.String" not-null="false"/>
+	</class>
+</hibernate-mapping>

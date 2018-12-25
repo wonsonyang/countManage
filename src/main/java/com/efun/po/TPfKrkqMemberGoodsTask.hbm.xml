@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2018-9-13 15:25:20 by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.efun.po.TPfKrkqMemberGoodsTask" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="t_pf_krkq_member_goods_task">
+        <id name="id" type="java.lang.Long">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="gameCode" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="gameCode">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="taskName" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="taskName">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="isTestData" optimistic-lock="true" type="string" unique="false">
+            <column length="2" name="isTestData">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="createTime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="createTime">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="deleted" optimistic-lock="true" type="string" unique="false">
+            <column length="2" name="deleted">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="activityStartTime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="activityStartTime">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="activityEndTime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="activityEndTime">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="orderNo" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="orderNo">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="goodsAutoIncrId" optimistic-lock="true" type="java.lang.Long" unique="false">
+            <column name="goodsAutoIncrId">
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

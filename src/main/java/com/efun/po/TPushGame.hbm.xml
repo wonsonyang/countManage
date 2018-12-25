@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.efun.po.TPushGame" table="t_push_game" >
+        <id name="keyId" type="java.lang.Long">
+            <column name="keyId" />
+            <generator class="native" />
+        </id>
+        <property name="gameCode" type="java.lang.String">
+            <column name="gameCode"/>
+        </property>
+        <property name="gameName" type="java.lang.String">
+            <column name="gameName"/>
+        </property>
+        <property name="parentGame" type="java.lang.String">
+            <column name="parentGame"/>
+        </property>
+        <property name="apiKey" type="java.lang.String">
+            <column name="apiKey" />
+        </property>
+        <property name="projectId" type="java.lang.String">
+            <column name="projectId" />
+        </property>
+        <property name="serverKey" type="java.lang.String">
+            <column name="serverKey" />
+        </property>
+        <property name="senderId" type="java.lang.String">
+            <column name="senderId" />
+        </property>
+        <property name="languages" type="java.lang.String">
+            <column name="languages" />
+        </property>
+        <property name="topices" type="java.lang.String">
+            <column name="topices" />
+        </property>
+        <property name="enableLoginTip" type="java.lang.String">
+            <column name="enableLoginTip" />
+        </property>
+        <property name="createdUser" type="java.lang.String">
+            <column name="createdUser" />
+        </property>
+        <property name="lastModifiedUser" type="java.lang.String">
+            <column name="lastModifiedUser" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="status" />
+        </property>
+        <property name="createdTime" type="java.util.Date">
+            <column name="createdTime" />
+        </property>
+        <property name="lastModifiedTime" type="java.util.Date">
+            <column name="lastModifiedTime" />
+        </property>
+        <property name="comment" type="java.lang.String">
+            <column name="comment" />
+        </property>
+        <property name="ipWhiteList" type="java.lang.String">
+            <column name="ipWhiteList" />
+        </property>
+        <property name="universalPush" type="java.lang.String">
+            <column name="universalPush" />
+        </property>
+    </class>
+</hibernate-mapping>

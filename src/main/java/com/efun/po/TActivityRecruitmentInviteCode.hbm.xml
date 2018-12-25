@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2018-9-25 15:28:03 by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.efun.po.TActivityRecruitmentInviteCode" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="t_activity_recruitment_invite_code">
+        <id name="id" type="java.lang.Long">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="inviteCode" optimistic-lock="true" type="string" unique="false">
+            <column length="32" name="inviteCode">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="inviter" optimistic-lock="true" type="string" unique="false">
+            <column length="16" name="inviter">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="deleted" optimistic-lock="true" type="java.lang.Short" unique="false">
+            <column name="deleted">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="createdTime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="createdTime">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="modifiedTime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="modifiedTime">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="usageCount" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="usageCount">
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

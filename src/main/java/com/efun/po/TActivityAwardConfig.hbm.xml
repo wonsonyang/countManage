@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.efun.po.TActivityAwardConfig" table="t_activity_reward_config" >
+        <id name="id" type="java.lang.String">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="gameCode" type="java.lang.String">
+            <column name="gameCode">
+                <comment>游戏代码</comment>
+            </column>
+        </property>
+        <property name="activityCode" type="java.lang.String">
+            <column name="activityCode">
+                <comment>活动代码</comment>
+            </column>
+        </property>
+        <property name="pid" type="java.lang.String">
+            <column name="pid">
+                <comment>子id，与父id对应</comment>
+            </column>
+        </property>
+        <property name="name" type="java.lang.String">
+            <column name="name">
+                <comment>名称</comment>
+            </column>
+        </property>
+        <property name="deleted" type="java.lang.String">
+            <column name="deleted">
+                <comment>是否删除</comment>
+            </column>
+        </property>
+        <property name="parentType" type="java.lang.String">
+            <column name="parentType">
+                <comment>父配置类型</comment>
+            </column>
+        </property>
+        <property name="sonType" type="java.lang.String">
+            <column name="sonType">
+                <comment>子配置类型</comment>
+            </column>
+        </property>
+        <property name="rewardId" type="java.lang.String">
+            <column name="rewardId">
+                <comment>发奖ID</comment>
+            </column>
+        </property>
+        <property name="rewardCode" type="java.lang.String">
+            <column name="rewardCode">
+                <comment>rewardCode，技术用</comment>
+            </column>
+        </property>
+        <property name="rewardTitle" type="java.lang.String">
+            <column name="rewardTitle">
+                <comment>发奖标题</comment>
+            </column>
+        </property>
+        <property name="rewardContent" type="java.lang.String">
+            <column name="rewardContent">
+                <comment>发奖内容</comment>
+            </column>
+        </property>
+        <property name="probability" type="java.lang.String">
+            <column name="probability">
+                <comment>抽奖概率，格式0.05</comment>
+            </column>
+        </property>
+        <property name="isLimited" type="java.lang.String">
+            <column name="isLimited">
+                <comment>是否有数量显示，默认否</comment>
+            </column>
+        </property>
+        <property name="num" type="java.lang.String">
+            <column name="num">
+                <comment>数量</comment>
+            </column>
+        </property>
+        <property name="defaultDBId" type="java.lang.String">
+            <column name="defaultDBId">
+                <comment>默认发送主键id</comment>
+            </column>
+        </property>
+        <property name="picture" type="java.lang.String">
+            <column name="picture">
+                <comment>图片</comment>
+            </column>
+        </property>
+        <property name="remark" type="java.lang.String">
+            <column name="remark">
+                <comment>备注</comment>
+            </column>
+        </property>
+        <property name="comment" type="java.lang.String">
+            <column name="comment">
+                <comment>说明</comment>
+            </column>
+        </property>
+        <property name="rewardCondition" type="java.lang.String">
+            <column name="rewardCondition">
+                <comment>奖励条件</comment>
+            </column>
+        </property>
+        <property name="modifyPeople" type="java.lang.String">
+            <column name="modifyPeople">
+                <comment>最后修改人</comment>
+            </column>
+        </property>
+        <property name="modifyTime" type="java.util.Date">
+            <column name="modifyTime">
+                <comment>最后修改时间</comment>
+            </column>
+        </property>
+        <property name="startedTime" type="java.util.Date">
+            <column name="startedTime">
+                <comment>开始时间</comment>
+            </column>
+        </property>
+        <property name="endTime" type="java.util.Date">
+            <column name="endTime">
+                <comment>结束时间</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

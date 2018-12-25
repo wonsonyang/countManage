@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2018-9-11 10:51:14 by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.efun.po.TActivityRecruitment" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="t_activity_recruitment">
+        <id name="id" type="java.lang.Long">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="name" optimistic-lock="true" type="string" unique="false">
+            <column length="16" name="name">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="phoneNumber" optimistic-lock="true" type="string" unique="false">
+            <column length="16" name="phoneNumber">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="email" optimistic-lock="true" type="string" unique="false">
+            <column length="64" name="email">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="schoolName" optimistic-lock="true" type="string" unique="false">
+            <column length="64" name="schoolName">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="graduationYear" optimistic-lock="true" type="java.lang.Short" unique="false">
+            <column name="graduationYear">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="educationDegree" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="educationDegree">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="recruitType" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="recruitType">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="postType" optimistic-lock="true" type="string" unique="false">
+            <column length="40" name="postType">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="position" optimistic-lock="true" type="string" unique="false">
+            <column length="40" name="position">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="province" optimistic-lock="true" type="string" unique="false">
+            <column length="16" name="province">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="city" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="city">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="informationSource" optimistic-lock="true" type="string" unique="false">
+            <column length="64" name="informationSource">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="createdTime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="createdTime">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="modifiedTime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="modifiedTime">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="deleted" optimistic-lock="true" type="java.lang.Short" unique="false">
+            <column name="deleted">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="resumeFilePath" optimistic-lock="true" type="string" unique="false">
+            <column length="200" name="resumeFilePath">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="resumeFileName" optimistic-lock="true" type="string" unique="false">
+            <column length="200" name="resumeFileName">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="inviteCode" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="inviteCode">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="status" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="status">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="interviewTime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="interviewTime">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="isReply" optimistic-lock="true" type="java.lang.Short" unique="false">
+            <column name="isReply">
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

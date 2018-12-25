@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.efun.po.TPfGoogleAuthVoidpurchase" table="t_pf_google_auth_voidpurchase" dynamic-insert="true" dynamic-update="true">
+		<meta attribute="sync-DAO">false</meta>
+		<id name="id" column="id" type="java.lang.Long">
+			<generator class="identity" />
+		</id>
+		<property name="gameCode" column="gameCode" type="java.lang.String" not-null="true"/>
+		<property name="developerAccount" column="developerAccount" type="java.lang.String" not-null="true"/>
+		<property name="packageName" column="packageName" type="java.lang.String" not-null="true"/>
+		<property name="serviceAccount" column="serviceAccount" type="java.lang.String" not-null="true"/>
+		<property name="flag" column="flag" type="java.lang.String" not-null="true"/>
+		<property name="createTime" column="createTime" type="java.util.Date" not-null="true"/>
+		<property name="modifiedTime" column="modifiedTime" type="java.util.Date" not-null="true"/>
+		<property name="operator" column="operator" type="java.lang.String" not-null="true"/>
+		<property name="mailAddr" column="mailAddr" type="java.lang.String" not-null="true"/>
+		<property name="mainContent" column="mainContent" type="java.lang.String" not-null="false"/>
+		<property name="deleted" column="deleted" type="java.lang.Integer" not-null="true"/>
+		<property name="autoBanAccount" column="autoBanAccount" type="java.lang.Integer" not-null="false"/>
+		<property name="bannedCondition" column="bannedCondition" type="java.lang.String" not-null="false"/>
+	</class>
+</hibernate-mapping>

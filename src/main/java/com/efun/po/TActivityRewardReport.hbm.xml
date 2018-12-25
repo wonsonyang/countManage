@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2017-10-11 16:59:08 by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.efun.po.TActivityRewardReport" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="t_activity_reward_report">
+        <id name="id" type="java.lang.Long">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="gameCode" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="gameCode" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="activityCode" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="activityCode" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="eventCode" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="eventCode">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="eventName" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="eventName">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="loginId" optimistic-lock="true" type="long" unique="false">
+            <column name="loginId" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="uid" optimistic-lock="true" type="long" unique="false">
+            <column name="uid" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="serverCode" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="serverCode">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="serverName" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="serverName">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="roleId" optimistic-lock="true" type="string" unique="false">
+            <column length="32" name="roleId">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="roleName" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="roleName">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="userName" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="userName">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="source" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="source" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="type" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="type" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="subType" optimistic-lock="true" type="string" unique="false">
+            <column length="200" name="subType" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="operatingTime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="operatingTime" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="remark" optimistic-lock="true" type="string" unique="false">
+            <column length="500" name="remark">
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

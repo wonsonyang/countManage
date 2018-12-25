@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.efun.po.TPayPayssion" table="t_pay_payssion" dynamic-insert="true" dynamic-update="true">
+		<meta attribute="sync-DAO">false</meta>
+		<id name="id" column="id" type="java.lang.Long">
+			<generator class="identity" />
+		</id>
+		<property name="userId" column="userId" type="java.lang.String" not-null="true"/>
+		<property name="gameCode" column="gameCode" type="java.lang.String" not-null="true"/>
+		<property name="serverCode" column="serverCode" type="java.lang.String" not-null="true"/>
+		<property name="creditId" column="creditId" type="java.lang.String" not-null="true"/>
+		<property name="efunLevel" column="efunLevel" type="java.lang.Integer" not-null="false"/>
+		<property name="gamePoint" column="gamePoint" type="java.math.BigDecimal" not-null="false"/>
+		<property name="amount" column="amount" type="java.math.BigDecimal" not-null="false"/>
+		<property name="areaAmount" column="areaAmount" type="java.math.BigDecimal" not-null="false"/>
+		<property name="usd" column="usd" type="java.math.BigDecimal" not-null="true"/>
+		<property name="stone" column="stone" type="java.lang.Integer" not-null="false"/>
+		<property name="currency" column="currency" type="java.lang.String" not-null="true"/>
+		<property name="flag" column="flag" type="java.lang.String" not-null="true"/>
+		<property name="paid" column="paid" type="java.lang.String" not-null="false"/>
+		<property name="payFrom" column="payFrom" type="java.lang.String" not-null="true"/>
+		<property name="payType" column="payType" type="java.lang.String" not-null="true"/>
+		<property name="productId" column="productId" type="java.lang.String" not-null="false"/>
+		<property name="payStatus" column="payStatus" type="java.lang.String" not-null="true"/>
+		<property name="efunOrderId" column="efunOrderId" type="java.lang.String" not-null="true"/>
+		<property name="transactionId" column="transactionId" type="java.lang.String" not-null="true"/>
+		<property name="createdTime" column="createdTime" type="java.util.Date" not-null="true"/>
+		<property name="modifiedTime" column="modifiedTime" type="java.util.Date" not-null="true"/>
+		<property name="country" column="country" type="java.lang.String" not-null="false"/>
+		<property name="reSend" column="reSend" type="java.lang.Integer" not-null="false"/>
+		<property name="isTest" column="isTest" type="java.lang.Integer" not-null="false"/>
+		<property name="resultCode" column="resultCode" type="java.lang.String" not-null="false"/>
+		<property name="ip" column="ip" type="java.lang.String" not-null="false"/>
+		<property name="menuId" column="menuId" type="java.lang.String" not-null="false"/>
+		<property name="itemId" column="itemId" type="java.lang.String" not-null="false"/>
+		<property name="activityStone" column="activityStone" type="java.lang.Integer" not-null="false"/>
+		<property name="packageName" column="packageName" type="java.lang.String" not-null="false"/>
+		<property name="areaTime" column="areaTime" type="java.util.Date" not-null="true"/>
+		<property name="remark" column="remark" type="java.lang.String" not-null="false"/>
+		<property name="efunToken" column="efunToken" type="java.lang.String" not-null="false"/>
+		<property name="paymentToken" column="paymentToken" type="java.lang.String" not-null="false"/>
+		<property name="backup" column="backup" type="java.lang.String" not-null="false"/>
+		<property name="advertisingid" column="advertisingid" type="java.lang.String" not-null="false"/>
+		<property name="deviceType" column="deviceType" type="java.lang.String" not-null="false"/>
+		<property name="systemVersion" column="systemVersion" type="java.lang.String" not-null="false"/>
+		<property name="mac" column="mac" type="java.lang.String" not-null="false"/>
+		<property name="imei" column="imei" type="java.lang.String" not-null="false"/>
+		<property name="versionCode" column="versionCode" type="java.lang.String" not-null="false"/>
+		<property name="gameVersion" column="gameVersion" type="java.lang.String" not-null="false"/>
+		<property name="idfa" column="idfa" type="java.lang.String" not-null="false"/>
+		<property name="cfuuid" column="cfuuid" type="java.lang.String" not-null="false"/>
+		<property name="androidid" column="androidid" type="java.lang.String" not-null="false"/>
+		<property name="efunFundAccount" column="efunFundAccount" type="java.lang.String" not-null="false"/>
+		<property name="isTort" column="isTort" type="java.lang.Integer" not-null="false"/>
+		<property name="str1" column="str1" type="java.lang.String" not-null="false"/>
+		<property name="str2" column="str2" type="java.lang.String" not-null="false"/>
+		<property name="str3" column="str3" type="java.lang.String" not-null="false"/>
+		<property name="str4" column="str4" type="java.lang.String" not-null="false"/>
+	</class>
+</hibernate-mapping>

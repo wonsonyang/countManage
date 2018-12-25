@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.efun.po.TIpInfo" table="t_ip_info">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="companyId" type="java.lang.Integer">
+            <column name="companyId" >
+                <comment>公司ID</comment>
+            </column>
+        </property>
+        <property name="ipAddr" type="java.lang.String">
+            <column name="ipAddr" length="64">
+                <comment>IP地址</comment>
+            </column>
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="email" length="64">
+                <comment>联系人邮箱</comment>
+            </column>
+        </property>
+        <property name="createdTime" type="java.sql.Timestamp">
+            <column name="createdTime">
+                <comment>创建时间</comment>
+            </column>
+        </property>
+        <property name="lastViewTime" type="java.sql.Timestamp">
+            <column name="lastViewTime">
+                <comment>最后访问时间</comment>
+            </column>
+        </property>
+        <property name="isDeleted" type="java.lang.Integer">
+            <column name="isDeleted">
+                <comment>0 = 未删除;1 = 已删除</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

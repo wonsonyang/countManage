@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    <class name="com.efun.po.TOperationLog" table="t_operation_log" dynamic-insert="true" dynamic-update="true">
+        <meta attribute="sync-DAO">false</meta>
+        <id name="id" column="id" type="java.lang.Integer">
+            <generator class="identity"/>
+        </id>
+        <property name="ip" column="ip" type="java.lang.String" not-null="false"/>
+        <property name="user" column="user" type="java.lang.String" not-null="false"/>
+        <property name="description" column="description" type="java.lang.String" not-null="false"/>
+        <property name="opTime" column="opTime" type="java.util.Date" not-null="false"/>
+        <property name="errorMsg" column="errorMsg" type="java.lang.String" not-null="false"/>
+        <property name="url" column="url" type="java.lang.String" not-null="false"/>
+        <property name="paramsStr" column="paramsStr" type="java.lang.String" not-null="false"/>
+        <property name="result" column="result" type="java.lang.String" not-null="false"/>
+        <property name="timeCost" column="timeCost" type="java.lang.Long" not-null="false"/>
+        <property name="thread" column="thread" type="java.lang.String" not-null="false"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.efun.po.TUserOnline" table="t_user_online" dynamic-insert="true" dynamic-update="true">
+		<meta attribute="sync-DAO">false</meta>
+		<id name="id" column="id" type="java.lang.Long">
+			<generator class="identity" />
+		</id>
+		<property name="uid" column="uid" type="java.lang.Long" not-null="false"/>
+		<property name="gameCode" column="gameCode" type="java.lang.String" not-null="false"/>
+		<property name="onlineTime" column="onlineTime" type="java.lang.Integer" not-null="false"/>
+		<property name="startCnt" column="startCnt" type="java.lang.Integer" not-null="false"/>
+		<property name="flag" column="flag" type="java.lang.String" not-null="false"/>
+		<property name="type" column="type" type="java.lang.String" not-null="false"/>
+		<property name="createTime" column="createTime" type="java.sql.Timestamp" not-null="true"/>
+		<property name="modifyTime" column="modifyTime" type="java.sql.Timestamp" not-null="true"/>
+	</class>
+</hibernate-mapping>

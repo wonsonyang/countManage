@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.efun.po.TGoogleRefundProduct" table="t_google_refund_product">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="gameCode" type="java.lang.String">
+            <column name="gameCode">
+                <comment>游戏代码</comment>
+            </column>
+        </property>
+        <property name="productName" type="java.lang.String">
+            <column name="productName">
+                <comment>商品名称</comment>
+            </column>
+        </property>
+        <property name="productId" type="java.lang.String">
+            <column name="productId">
+                <comment>商品ID</comment>
+            </column>
+        </property>
+        <property name="gamePay" type="java.lang.Double">
+            <column name="gamePay">
+                <comment>金额</comment>
+            </column>
+        </property>
+        <property name="stone" type="java.lang.Double">
+            <column name="stone">
+                <comment>钻石数</comment>
+            </column>
+        </property>
+        <property name="deleted" type="java.lang.Integer">
+            <column name="deleted" >
+                <comment>逻辑删除 0或空 未删除 1 已删除</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

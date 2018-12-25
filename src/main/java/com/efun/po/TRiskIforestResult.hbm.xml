@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2018-7-10 13:57:14 by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.efun.po.TRiskIforestResult" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="t_risk_iforest_result">
+        <id name="id" type="java.lang.Long">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="createdTime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="createdTime" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="username" optimistic-lock="true" type="string" unique="false">
+            <column length="256" name="username"/>
+        </property>
+        <property generated="never" lazy="false" name="password" optimistic-lock="true" type="string" unique="false">
+            <column length="128" name="password"/>
+        </property>
+        <property generated="never" lazy="false" name="userId" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="userId"/>
+        </property>
+        <property generated="never" lazy="false" name="gameCode" optimistic-lock="true" type="string" unique="false">
+            <column length="30" name="gameCode"/>
+        </property>
+        <property generated="never" lazy="false" name="advertisingId" optimistic-lock="true" type="string" unique="false">
+            <column length="128" name="advertisingId"/>
+        </property>
+        <property generated="never" lazy="false" name="idfa" optimistic-lock="true" type="string" unique="false">
+            <column length="128" name="idfa"/>
+        </property>
+        <property generated="never" lazy="false" name="eid" optimistic-lock="true" type="string" unique="false">
+            <column length="128" name="eid"/>
+        </property>
+        <property generated="never" lazy="false" name="mac" optimistic-lock="true" type="string" unique="false">
+            <column length="128" name="mac"/>
+        </property>
+        <property generated="never" lazy="false" name="imei" optimistic-lock="true" type="string" unique="false">
+            <column length="128" name="imei"/>
+        </property>
+        <property generated="never" lazy="false" name="adId" optimistic-lock="true" type="string" unique="false">
+            <column length="128" name="adId"/>
+        </property>
+        <property generated="never" lazy="false" name="androidId" optimistic-lock="true" type="string" unique="false">
+            <column length="128" name="androidId"/>
+        </property>
+        <property generated="never" lazy="false" name="ip" optimistic-lock="true" type="string" unique="false">
+            <column length="128" name="ip"/>
+        </property>
+        <property generated="never" lazy="false" name="ipIso" optimistic-lock="true" type="string" unique="false">
+            <column length="128" name="ipIso"/>
+        </property>
+        <property generated="never" lazy="false" name="ipAddress" optimistic-lock="true" type="string" unique="false">
+            <column length="128" name="ipAddress"/>
+        </property>
+        <property generated="never" lazy="false" name="ipUserNum" optimistic-lock="true" type="java.lang.Long" unique="false">
+            <column name="ipUserNum"/>
+        </property>
+        <property generated="never" lazy="false" name="ipUserPerDevice" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="ipUserPerDevice" precision="20" scale="1"/>
+        </property>
+        <property generated="never" lazy="false" name="cityUserPerDevice" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="cityUserPerDevice" precision="20" scale="1"/>
+        </property>
+        <property generated="never" lazy="false" name="cityUserPerIp" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="cityUserPerIp" precision="20" scale="1"/>
+        </property>
+        <property generated="never" lazy="false" name="eidUserNum" optimistic-lock="true" type="java.lang.Long" unique="false">
+            <column name="eidUserNum"/>
+        </property>
+        <property generated="never" lazy="false" name="eidIpNum" optimistic-lock="true" type="java.lang.Long" unique="false">
+            <column name="eidIpNum"/>
+        </property>
+        <property generated="never" lazy="false" name="eidUserPerIp" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="eidUserPerIp" precision="20" scale="1"/>
+        </property>
+        <property generated="never" lazy="false" name="macUserNum" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="macUserNum" precision="20" scale="1"/>
+        </property>
+        <property generated="never" lazy="false" name="macIpNum" optimistic-lock="true" type="java.lang.Long" unique="false">
+            <column name="macIpNum"/>
+        </property>
+        <property generated="never" lazy="false" name="macUserPerIp" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="macUserPerIp" precision="20" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="imeiUserNum" optimistic-lock="true" type="java.lang.Long" unique="false">
+            <column name="imeiUserNum"/>
+        </property>
+        <property generated="never" lazy="false" name="imeiIpNum" optimistic-lock="true" type="java.lang.Long" unique="false">
+            <column name="imeiIpNum"/>
+        </property>
+        <property generated="never" lazy="false" name="imeiUserPerIp" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="imeiUserPerIp" precision="20" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="adUserNum" optimistic-lock="true" type="java.lang.Long" unique="false">
+            <column name="adUserNum"/>
+        </property>
+        <property generated="never" lazy="false" name="adIpNum" optimistic-lock="true" type="java.lang.Long" unique="false">
+            <column name="adIpNum"/>
+        </property>
+        <property generated="never" lazy="false" name="adUserPerIp" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="adUserPerIp" precision="20" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="psUserCount" optimistic-lock="true" type="java.lang.Long" unique="false">
+            <column name="psUserCount"/>
+        </property>
+        <property generated="never" lazy="false" name="label" optimistic-lock="true" type="java.lang.Long" unique="false">
+            <column name="label"/>
+        </property>
+        <property generated="never" lazy="false" name="anomalyScore" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="anomalyScore" precision="20" scale="16"/>
+        </property>
+        <property generated="never" lazy="false" name="prediction" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="prediction" precision="20" scale="1"/>
+        </property>
+        <property generated="never" lazy="false" name="comment" optimistic-lock="true" type="string" unique="false">
+            <column length="65535" name="comment"/>
+        </property>
+    </class>
+</hibernate-mapping>

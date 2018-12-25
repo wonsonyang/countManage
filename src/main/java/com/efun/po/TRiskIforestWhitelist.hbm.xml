@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2018-10-17 10:38:52 by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.efun.po.TRiskIforestWhitelist" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="t_risk_iforest_whiteList">
+        <id name="id" type="java.lang.Long">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="gameCode" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="gameCode" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="userId" optimistic-lock="true" type="java.lang.Long" unique="false">
+            <column name="userId">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="ip" optimistic-lock="true" type="string" unique="false">
+            <column length="128" name="ip">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="device" optimistic-lock="true" type="string" unique="false">
+            <column length="64" name="device">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="createdTime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="createdTime" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="modifiedTime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="modifiedTime" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="createdUser" optimistic-lock="true" type="string" unique="false">
+            <column length="128" name="createdUser" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="modifiedUser" optimistic-lock="true" type="string" unique="false">
+            <column length="128" name="modifiedUser" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="deleted" optimistic-lock="true" type="boolean" unique="false">
+            <column name="deleted" not-null="true">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="comment" optimistic-lock="true" type="string" unique="false">
+            <column length="250" name="comment">
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.efun.po.TPushMessage" table="t_push_message" >
+        <id name="keyId" type="java.lang.Long">
+            <column name="keyId" />
+            <generator class="native" />
+        </id>
+        <property name="gameCode" type="java.lang.String">
+            <column name="gameCode"/>
+        </property>
+        <property name="pushType" type="java.lang.String">
+            <column name="pushType"/>
+        </property>
+        <property name="messageType" type="java.lang.String">
+            <column name="messageType"/>
+        </property>
+        <property name="title" type="java.lang.String">
+            <column name="title" />
+        </property>
+        <property name="body" type="java.lang.String">
+            <column name="body" />
+        </property>
+        <property name="icon" type="java.lang.String">
+            <column name="icon" />
+        </property>
+        <property name="firebaseType" type="java.lang.String">
+            <column name="firebaseType" />
+        </property>
+        <property name="firebaseMsg" type="java.lang.String">
+            <column name="firebaseMsg" />
+        </property>
+        <property name="firebaseShow" type="java.lang.String">
+            <column name="firebaseShow" />
+        </property>
+        <property name="topices" type="java.lang.String">
+            <column name="topices" />
+        </property>
+        <property name="language" type="java.lang.String">
+            <column name="language" />
+        </property>
+        <property name="userId" type="java.lang.String">
+            <column name="userId" />
+        </property>
+        <property name="startTime" type="java.util.Date">
+            <column name="startTime" />
+        </property>
+        <property name="endTime" type="java.util.Date">
+            <column name="endTime" />
+        </property>
+        <property name="disableTime" type="java.util.Date">
+            <column name="disableTime" />
+        </property>
+        <property name="createdTime" type="java.util.Date">
+            <column name="createdTime" />
+        </property>
+        <property name="lastModifiedTime" type="java.util.Date">
+            <column name="lastModifiedTime" />
+        </property>
+        <property name="createdUser" type="java.lang.String">
+            <column name="createdUser" />
+        </property>
+        <property name="lastModifiedUser" type="java.lang.String">
+            <column name="lastModifiedUser" />
+        </property>
+        <property name="cycle" type="java.lang.String">
+            <column name="cycle" />
+        </property>
+        <property name="total" type="java.lang.String">
+            <column name="total" />
+        </property>
+        <property name="priority" type="java.lang.String">
+            <column name="priority" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="status" />
+        </property>
+        <property name="flag" type="java.lang.String">
+            <column name="flag" />
+        </property>
+        <property name="packageName" type="java.lang.String">
+            <column name="packageName" />
+        </property>
+        <property name="remark" type="java.lang.String">
+            <column name="remark" />
+        </property>
+        <property name="isTest" type="java.lang.String">
+            <column name="isTest" />
+        </property>
+        <property name="comment" type="java.lang.String">
+            <column name="comment" />
+        </property>
+        <property name="pushVoiceTip" type="java.lang.String">
+            <column name="pushVoiceTip" />
+        </property>
+    </class>
+</hibernate-mapping>

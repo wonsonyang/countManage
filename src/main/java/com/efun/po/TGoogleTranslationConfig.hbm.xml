@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.efun.po.TGoogleTranslationConfig" table="t_google_translation_config" >
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="area" type="java.lang.String">
+            <column name="area"/>
+        </property>
+        <property name="gameCode" type="java.lang.String">
+            <column name="gameCode"/>
+        </property>
+        <property name="gameName" type="java.lang.String">
+            <column name="gameName"/>
+        </property>
+        <property name="apiKey" type="java.lang.String">
+            <column name="apiKey" />
+        </property>
+        <property name="ipAccessCount" type="java.lang.String">
+            <column name="ipAccessCount" />
+        </property>
+        <property name="ipWhitelist" type="java.lang.String">
+            <column name="ipWhitelist" />
+        </property>
+        <property name="createdTime" type="java.util.Date">
+            <column name="createdTime" />
+        </property>
+        <property name="modifiedTime" type="java.util.Date">
+            <column name="modifiedTime" />
+        </property>
+        <property name="deleted" type="java.lang.String">
+            <column name="deleted" />
+        </property>
+        <property name="createdBy" type="java.lang.String">
+            <column name="createdBy" />
+        </property>
+        <property name="modifiedBy" type="java.lang.String">
+            <column name="modifiedBy" />
+        </property>
+        <property name="comment" type="java.lang.String">
+            <column name="comment" />
+        </property>
+        <property name="syncStatus" type="java.lang.String">
+            <column name="syncStatus" />
+        </property>
+    </class>
+</hibernate-mapping>

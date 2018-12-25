@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2017-11-6 15:22:08 by Hibernate Tools 5.2.3.Final -->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="com.efun.po.TCashflowProductPrice" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="t_cashflow_product_price">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="title" optimistic-lock="true" type="string" unique="false">
+            <column length="200" name="title">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="price" optimistic-lock="true" type="big_decimal" unique="false">
+            <column name="price" precision="10">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="cashflow" optimistic-lock="true" type="string" unique="false">
+            <column length="30" name="cashflow">
+            </column>
+        </property>
+        <property generated="never" lazy="false" name="deleted" optimistic-lock="true" type="string" unique="false">
+            <column length="2" name="deleted">
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>
